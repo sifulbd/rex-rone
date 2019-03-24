@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>King Tree Services</title>
+    <link rel="stylesheet" type="text/css" href="styles/flex-slider.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/jquery-min.js" type="text/javascript"></script>  
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+    <script>
+      
+    </script>
+   <script type="text/javascript">
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            slideshow: false,
+            directionNav: true, 
+            start: function(slider){
+              $('body').removeClass('loading');
+            }
+          });
+          
+          jQuery(function () {
+                var myPlayer;
+                
+                // myPlayer.on("YTPUnstarted", function(){
+                //     alert("ready")
+                // })
+            
+                var options = {
+                    mobileFallbackImage: "http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg",
+                    playOnlyIfVisible  : false,
+                };
+                myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true, mobileFallbackImage:"assets/mask-4.png"});
+    
+          // myPlayer = jQuery(".player").YTPlayer(options);
+          });
+      
+        });
+    </script>
+    
+    <style>
+      #nameone{
+         background-color: #000;
+         /*background-position: center center;*/
+         /*background-repeat: no-repeat;*/
+         /*background-size: cover;*/
+      }
+    </style>
+    
+    
+
+</head>
+  <body class="lo-home">
+    
+    <div class="loader"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="King Tree Services" title="King Tree Services"></a>
+          </div>
+
+          <div class="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav">    
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+
+        <div class="call">
+          <h3>Call us now on</h3>
+          <a href="tel:040462422">01 286 8658</a>
+        </div>
+
+
+          <div class="clear"></div>
+        </div>
+        
+      </header>
+
+
+      <section class="banner">
+          <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div id="nameone">
+                 <div id="bgndVideo" class="player lo-video-player" 
+                      data-property="{videoURL:'Mzabs7Kl71o',containment:'#nameone', showControls:true, 
+                      autoPlay:true, loop:false, vol:0, mute:false, startAt:0,  stopAt:300, opacity:1,
+                      addRaster:true, quality:'large', optimizeDisplay:true, addFilters: {grayscale: 0,sepia: 0,opacity: 0}}"></div>
+                      <div class="flex-caption">
+                      <p>Video Tree </p>
+                      <h2>TREE Care &amp; Maintenance</h2>
+                      <a href="services.html" class="btn">View our services</a>
+                    </div>
+              </div>
+            </li>   
+            <li>
+              <img src="images/banner-home-06.jpg" />
+              <div class="flex-caption">
+                <p>Tree Services</p>
+                <h2>TREE Care &amp; Maintenance</h2>
+                <a href="services.html" class="btn">View our services</a>
+              </div>
+            </li>
+
+            <li>
+              <img src="images/banner-home-07.jpg" />
+               <div class="flex-caption">
+                <p>Tree Advice</p>
+                <h2>Ask the Experts</h2>
+                <a href="contact.html" class="btn">Contact Us</a>
+              </div>
+            </li> 
+            
+            <li>
+              <img src="images/banner-home-08.jpg" />
+               <div class="flex-caption">
+                <p>Tree Surgery</p>
+                <h2>TREE Surgery Operations</h2>
+                <a href="services.html" class="btn">View our services</a>
+              </div>
+            </li>
+              
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="intro">
+        <div class="container">
+          <h2 class="heading"><span>Welcome to</span>King Tree Services</h2>
+
+          <p class="subhead">For over 30 years we have been proudly serving both private and public customers in the care and maintenance of trees.</p>
+
+          <p>We are a family-run business that provide all aboricultural services ranging from small private projects to large commercial projects, all of which are treated with the same care and attention.</p>
+
+          <p>Based in Wicklow, we provide full Nationwide Coverage.</p>
+        </div>
+        <div class="clear"></div>
+      </section>
+
+      <section class="services bg2">
+        <div class="container">
+        <h2 class="heading">Our Services</h2>
+
+        <ul>
+          <li>
+            <a href="services.html">
+            <div class="img"><img src="images/banner-homeservices-01.jpg" /></div>
+            <div class="txt">Traffic Management</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html">
+            <div class="img"><img src="images/banner-homeservices-02.jpg" /></div>
+            <div class="txt">Tree Felling</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html">
+            <div class="img"><img src="images/banner-homeservices-03.jpg" /></div>
+            <div class="txt">Stump Grinding</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html">
+            <div class="img"><img src="images/banner-homeservices-04.jpg" /></div>
+            <div class="txt">Christmas Trees</div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <div class="btn-wrap">
+            <a href="services.html" class="btn">View All Services</a>
+        </div>
+        <div class="clear20"></div>
+
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="heading type2">Contact Us</h2>
+          <p>Whether you are based in Wicklow, Dublin, Cork or Donegal we provide a nationwide service. </p>
+<p>So contact Charlie or Paddy King direct to discuss your requirements and we will provide you with a quote.</p>
+      <div class="clear"></div>
+
+        <div class="btn-wrap type2">
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+        </div>
+
+      </section>
+
+
+      <!-- GreenKing Composting -->
+      <section class="gk">
+          <div class="container">
+              <p>Also visit GreenKing Composting Website</p>
+              <p><img src="images/logo-gk.png" /></p>
+              <div class="btn-wrap type2">
+                <a href="http://greenking.ie/" class="btn">Visit Greenking</a>
+              </div>
+
+          <div class="clear"></div>
+          </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="c1">
+          <p>Glaskenny, Enniskerry, County Wicklow</p>
+            <p>Tel: 01 2868658 | Email: <a href="mailto:info@kingtree.ie">info@kingtree.ie</a></p>  
+          </div>
+          <div class="c2">
+            <a href="http://www.creativedynamics.ie" target="_blank">
+            <p>Web Design & Development<br> by <span>Creative Dynamics</span></p>
+            </a>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+              <p>Copyright © 2017 King Tree Services</p>
+            </div>
+          </div>
+      </footer>
+  </body>
+</html>

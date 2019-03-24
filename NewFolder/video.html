@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>King Tree Services</title>
+    <link rel="stylesheet" type="text/css" href="styles/flex-slider.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/jquery-min.js" type="text/javascript"></script>  
+      <script src="scripts/common.js" type="text/javascript"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+<script>
+    var myPlayer;
+    jQuery(function () {
+      myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true, mobileFallbackImage:"assets/mask-4.png"});
+     
+      /* update applied filters */
+      myPlayer.on("YTPFiltersApplied", function(){
+        var filters = myPlayer.get(0).filters;
+
+        for (var key in filters){
+          $(".slider[data-filter="+key+"]").updateSliderVal(filters[key].value);
+        }
+      });
+    });
+
+    /**
+     *
+     * @param val
+     * @returns {*|number}
+     */
+    function checkForVal(val){
+      return val || 0;
+    }
+  </script>
+   <script type="text/javascript">
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            slideshow: false,
+            directionNav: true, 
+            start: function(slider){
+              $('body').removeClass('loading');
+            }
+          });
+        });
+    </script>
+
+</head>
+  <body>
+    <div id="nameoin">
+      
+     <div id="bgndVideo" class="player" data-property="{videoURL:'Fk9EBOOAYiU',containment:'#nameoin', showControls:true, autoPlay:true, loop:true, vol:50, mute:false, startAt:0,  stopAt:300, opacity:1, addRaster:true, quality:'large', optimizeDisplay:true, addFilters: {grayscale: 50,sepia: 80,opacity: 30}}">My video</div>
+    </div>
+    
+
+
+   
+  </body>
+</html>
